@@ -174,23 +174,6 @@ The application will automatically open at http://localhost:3000.
 
 If you run the initial database scripts, the following demo accounts are available:
 
-Role	Email	Password	Access Level
-Admin	admin@spms.com	admin123	Full access to students, drives, verification & analytics
-Student	student@spms.com	password123	Profile management, drive applications, mock tests
-Recruiter	recruiter@spms.com	recruiter123	Post company drives & review candidates
-📡 API Endpoints Overview
-Blueprint	Method	Endpoint	Description	Auth Required
-Auth	POST	/api/auth/register	Register a new user	❌ No
-Auth	POST	/api/auth/login	Authenticate and receive JWT	❌ No
-Student	GET	/api/students/profile	Retrieve student profile details	✅ Yes
-Student	PUT	/api/students/profile	Update academic information	✅ Yes
-Jobs	GET	/api/jobs	List all active placement drives	❌ No
-Jobs	POST	/api/jobs	Create a new campus placement drive	✅ Admin/Recruiter
-Applications	POST	/api/applications	Apply for an active drive	✅ Student
-Applications	GET	/api/applications/my	View student's applied drives	✅ Student
-Admin	GET	/api/admin/dashboard	Fetch aggregate placement metrics	✅ Admin
-Tests	GET	/api/tests	Fetch mock assessment quizzes	✅ Student
-Resume	POST	/api/resume/analyze	Scan resume for ATS score & skills	✅ Student
 👨‍💻 Author & Acknowledgments
 Author Name : VIPUL KUMAR YADAV
 Project Name: Smart Placement Management System (SPMS)
